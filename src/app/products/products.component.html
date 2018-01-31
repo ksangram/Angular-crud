@@ -1,0 +1,23 @@
+<p>
+  products works!
+</p>
+
+
+<a routerLink ="/"> << Go Back </a>
+
+<h3> <u>Add New Vehicle </u></h3>
+
+<form id="formNewVehicle" name="formNewVehicle" #vehicleData="ngForm" (ngSubmit) ="addNewVehicle(vehicleData.value)";>
+<label>Name :</label>
+<input type="text" name="name" id="name" placeholder="name" ngModel><br>
+
+<label>Color :</label>
+<input type="text" name="color" id="color" placeholder="color" ngModel><br>
+
+<label>Model :</label>
+<input type="text" name="model" id="model" placeholder="model" ngModel><br>
+
+<label>Cost :</label>
+<input type="text" name="cost" id="cost" placeholder="cost" ngModel><br>
+
+</form>

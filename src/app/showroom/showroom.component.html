@@ -1,0 +1,24 @@
+<p>
+  showroom works!
+</p>
+
+<h3><a routerLink = '/products'> + Add Vehicle </a></h3>
+
+<div >
+  <h2><u>Vehicle Details</u></h2>
+  <table>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Model</th>
+        <th>Cost</th>
+
+        <tr *ngFor = "let Vehicles of vehicle">
+              <td>{{Vehicles.id}}</td>
+              <td>{{Vehicles.name}}</td>
+              <td>{{Vehicles.color}}</td>
+              <td>{{Vehicles.model}}</td>
+              <td>{{Vehicles.cost}}</td>
+        </tr>
+  </table>
+</div>
