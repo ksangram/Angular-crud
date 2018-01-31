@@ -12,6 +12,7 @@
         <th>Color</th>
         <th>Model</th>
         <th>Cost</th>
+        <th>Action</th>
 
         <tr *ngFor = "let Vehicles of vehicle">
               <td>{{Vehicles.id}}</td>
@@ -19,6 +20,7 @@
               <td>{{Vehicles.color}}</td>
               <td>{{Vehicles.model}}</td>
               <td>{{Vehicles.cost}}</td>
+              <td (click) = "deleteVehicle(Vehicles.id)"><a>Delete</a></td>
         </tr>
   </table>
 </div>

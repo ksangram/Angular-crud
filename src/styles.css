@@ -14,3 +14,8 @@ a{
     width: 20%;
     margin:0 auto;
 }
+a:hover{
+    
+    color:red;
+    cursor: pointer;
+}

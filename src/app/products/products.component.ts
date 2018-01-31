@@ -10,6 +10,8 @@ export class ProductsComponent implements OnInit {
 
   constructor(private http: Http) { }
 
+  ConfirmationString:string = "New Vehicle has been added..";
+  isAdded:boolean = false;
   productObj:object = {}
 
   addNewVehicle = function(products){
@@ -22,7 +24,7 @@ export class ProductsComponent implements OnInit {
         }
 
         this.http.post("http://localhost:3000/vehicle/",this.productObj).subscribe((res:Response) => {
-          console.log(res);
+          this.isAdded = true;
         })
   }
 
