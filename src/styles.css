@@ -5,8 +5,12 @@ table, th, tr, td {
     font-size: 16px;
     padding: 5px;
 }
-
 a{
     /* font-size: 14px; */
     color: blueviolet;
+}
+#formNewProducts{
+    border:2px solid;
+    width: 20%;
+    margin:0 auto;
 }

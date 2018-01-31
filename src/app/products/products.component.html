@@ -7,17 +7,20 @@
 
 <h3> <u>Add New Vehicle </u></h3>
 
-<form id="formNewVehicle" name="formNewVehicle" #vehicleData="ngForm" (ngSubmit) ="addNewVehicle(vehicleData.value)";>
+<form id="formNewProducts" name="formNewProducts" #vehicleData = "ngForm" (ngSubmit) = "addNewVehicle(vehicleData.value)">
 <label>Name :</label>
-<input type="text" name="name" id="name" placeholder="name" ngModel><br>
+<input type="text" name="name" id="name" placeholder="name" ngModel><br><br>
 
 <label>Color :</label>
-<input type="text" name="color" id="color" placeholder="color" ngModel><br>
+<input type="text" name="color" id="color" placeholder="color" ngModel><br><br>
 
 <label>Model :</label>
-<input type="text" name="model" id="model" placeholder="model" ngModel><br>
+<input type="text" name="model" id="model" placeholder="model" ngModel><br><br>
 
 <label>Cost :</label>
-<input type="text" name="cost" id="cost" placeholder="cost" ngModel><br>
+<input type="text" name="cost" id="cost" placeholder="cost" ngModel><br><br>
+
+<input type="submit" value="Add Vehicle">
 
 </form>
+

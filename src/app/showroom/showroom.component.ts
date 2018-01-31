@@ -11,7 +11,7 @@ export class ShowroomComponent implements OnInit {
   constructor(private http: Http) { }
 
 
-  vehicle = [];
+  // vehicle = [];
 
           fetchData = function(){
             this.http.get("http://localhost:3000/vehicle").subscribe(
